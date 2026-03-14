@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "cp zero-day.jsx src/zero-day.jsx && react-scripts build",
+    "postbuild": "rm -f src/zero-day.jsx"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
